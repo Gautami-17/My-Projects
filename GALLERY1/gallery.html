@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Web Page</title>
+    <style>
+        body{
+            background: #e2d8d8;
+            margin-top: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .thumbnails img{
+            height:100px;
+            border: 4px solid #555;
+            padding:1px;
+            margin: 0 10px 10px 0;
+        }
+        .thumbnails img:hover{
+            border:4px solid #00ccff;
+          
+        }
+        .preview img{
+            border: 4px solid #444;
+            padding:1px;
+            width: 500px;
+            height:300px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container" align="center">
+        <h1>My Gallery Web Page</h1>
+        <div class="thumbnails">
+            <img onmouseover="preview.src=i1.src" name="i1" src="i1.jpg" height="100px"/>
+            <img onmouseover="preview.src=i2.src" name="i2" src="i2.jpg" height="100px"/>
+            <img onmouseover="preview.src=i3.src" name="i3" src="i3.jpg" height="100px"/>
+            <img onmouseover="preview.src=i4.src" name="i4" src="i4.jpg" height="100px"/>
+            <img onmouseover="preview.src=i5.src" name="i5" src="i5.jpg" height="100px"/>
+            <img onmouseover="preview.src=i6.src" name="i6" src="i6.jpg" height="100px"/>
+        </div>
+        <div class="preview" align="center">
+            <img name="preview" src="i1.jpg" height="200px">
+        </div>
+    </div>
+</body>
+</html>
